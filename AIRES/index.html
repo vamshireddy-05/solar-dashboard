@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Solar Dashboard</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<header>
+  <h1>Solar Dashboard</h1>
+</header>
+
+<main>
+  <section class="forecast-input">
+    <form id="forecastForm">
+      <input type="text" id="city" placeholder="Enter city name" required />
+      <button type="submit">Get Solar Forecast</button>
+    </form>
+  </section>
+
+  <section class="forecast-cards">
+    <!-- 7-day forecast cards will appear here -->
+  </section>
+
+  <section class="weekly-chart">
+    <canvas id="weeklyTrend"></canvas>
+  </section>
+
+  <div class="loading" id="loading">Loading...</div>
+  <div class="error" id="error"></div>
+</main>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
